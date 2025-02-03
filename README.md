@@ -19,5 +19,5 @@ npm install
 ## To run it
 
 ```
-npm rub dev
+npm run dev
 ```
