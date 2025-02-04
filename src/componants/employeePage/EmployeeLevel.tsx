@@ -25,7 +25,7 @@ const EmployeeLevel = () => {
         setLoading(false);
         const updatedAchievements = response.levels.map((ach: Achievement, index: number) => ({
           ...ach,
-          unlocked: index + 1 <= level_id,
+          unlocked: index <= level_id,
         }));
         setAchievements(updatedAchievements);
       }).catch((error) => {
